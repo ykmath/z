@@ -1,0 +1,17 @@
+.title {
+    width: 70%;
+    margin: auto;
+    height: 2rem;
+    padding: 5px;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(173, 173, 173);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.title h2 {
+    border-bottom: 2px solid rgb(53, 171, 240);
+    color: rgb(39, 39, 39);
+    width: fit-content;
+    margin: auto;
+}

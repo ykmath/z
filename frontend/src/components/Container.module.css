@@ -1,0 +1,15 @@
+.container {
+    position: relative;
+    max-width: 1210px;
+    margin: 2rem auto;
+    background-color: rgb(238, 238, 238);
+    border: 2px solid rgb(97, 97, 97);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 90vh;
+}
+
+.layout {
+    display: flex;
+    height: 100%;
+}

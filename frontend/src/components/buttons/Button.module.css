@@ -1,0 +1,41 @@
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    border: 0;
+    border-radius: 10px;
+    background-color: transparent;
+    color: black;
+}
+
+.icon:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.icon svg {
+    font-size: 22px;
+}
+
+.icon .liked {
+    color: rgb(209, 34, 34);
+}
+
+.icon .number {
+    position: absolute;
+    left: 100%;
+    font-size: 16px;
+    color: black;
+}
+
+.icon.big {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.icon.big p {
+    font-size: 21px;
+}

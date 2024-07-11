@@ -1,0 +1,25 @@
+GET http://localhost:3050/api/post
+
+###
+PATCH http://localhost:3050/api/post/668a2c1d52da555dea3f40d7
+Content-Type: application/json
+
+{
+    "usuario": "eei",
+    "value": false
+}
+
+###
+POST http://localhost:3050/api/comment/668a2c1d52da555dea3f40d7
+Content-Type: application/json
+
+{
+    "usuario": "maria",
+    "msg": "muito bom"
+}
+
+###
+POST http://localhost:3050/api/user/jailson
+
+###
+GET http://localhost:3050/api/user/jailson

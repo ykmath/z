@@ -1,0 +1,23 @@
+.btn {
+    position: absolute;
+    background-color: rgb(53, 171, 240);
+    border: 0;
+    border-radius: 50%;
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+.btn:hover {
+    border: 1px solid rgb(94, 94, 94);
+    cursor: pointer;
+}
+
+.btn svg {
+    font-size: 60px;
+    color: white;
+}
+
+.btn.home {
+    bottom: 3em;
+    right: clamp(20px, 10%, 10rem)
+}

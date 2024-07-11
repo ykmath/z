@@ -1,0 +1,45 @@
+.form-container {
+    height: fit-content;
+    padding: 1rem 6em;
+    border-bottom: 1px solid lightgray;
+}
+
+
+.form-container form {
+    height: 100%;
+}
+
+.text {
+    width: 80%;
+    padding: 0.8rem;
+    border-radius: 15px;
+    border: 1px solid gray;
+    font-size: 20px;
+    resize: none;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.text::placeholder {
+    font-size: 20px;
+    color: rgb(194, 194, 194);
+}
+
+.text:focus {
+    outline: none;
+}
+
+.form-container svg {
+    font-size: 30px;
+    margin-left: 10px;
+    background-color: rgb(53, 171, 240);
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    transform: translateY(-0.25rem);
+}
+
+.form-container svg:hover {
+    cursor: pointer;
+    background-color: rgb(27, 131, 190);
+}

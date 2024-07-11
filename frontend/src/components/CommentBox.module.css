@@ -1,0 +1,44 @@
+.comment {
+    display: grid;
+    grid-template-columns: 4.5rem auto;
+    padding: 1rem 0 1rem 6.5rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.comment-image {
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: rgb(196, 196, 196);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.comment-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.comment-image::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1.4rem;
+    height: 2.5rem;
+    border-left: 3px solid rgb(238, 238, 238);
+    border-bottom: 3px solid rgb(238, 238, 238);
+    transform: translate(-2.1rem, -0.3rem);
+}
+
+.comment-text {
+    padding: 0 1rem;
+}
+
+.comment-text h2 {
+    font-size: 25px;
+}
+
+.comment-text p {
+    text-align: justify;
+    hyphens: auto;
+    font-size: 20px;
+}

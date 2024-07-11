@@ -1,0 +1,12 @@
+.nav {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    border-bottom: 2px solid rgb(97, 97, 97);
+    padding: 10px;
+    background-color: white;
+}
+
+.nav img {
+    height: 2rem;
+}
