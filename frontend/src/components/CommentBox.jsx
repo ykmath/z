@@ -11,7 +11,7 @@ function CommentBox({comentario}) {
         fetch(`http://${location}:3050/api/user/${comentario.usuario}`)
          .then(r => r.json())
          .then((dados) => {
-            setImg(dados.value[0].img);
+            setImg(dados.value.img);
          })
          .catch(err => console.log(err))
     }, [])

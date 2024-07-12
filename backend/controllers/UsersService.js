@@ -27,14 +27,27 @@ const userService = {
     },
     get: async (req, res) => {
         const nome = req.params.nome;
-        const exist = await userSchema.find({nome: nome});
+        const exist = await userSchema.findOne({nome: nome});
 
-        if (exist.length === 0) {
+        if (!exist || exist.length === 0) {
             res.status(404).json({msg: "Este usuário nao existe.", value: []});
             return;
         }
 
         res.status(200).json({msg: "Usuário encontrado!", value: exist});
+    },
+    changePicture: async (req, res) => {
+        const nome = req.params.nome;
+        const newPhoto = req.body.value;
+
+        const user = await userSchema.findOneAndUpdate({nome: nome}, {$set: {img: newPhoto}});
+        
+        if (!user || user.length === 0) {
+            res.status(404).json({msg: "Usuário não encontrado."})
+            return;
+        };
+
+        res.status(201).json({msg: "Foto alterada com sucesso!", value: newPhoto});
     }
 }
 

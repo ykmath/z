@@ -47,7 +47,7 @@ function PostInfo() {
          .then(r => r.json())
          .then((dados) => {
             console.log(dados)
-            setImg(dados.value[0].img);
+            setImg(dados.value.img);
          })
          .catch(err => console.log(err))
     }, [post])
@@ -79,7 +79,7 @@ function PostInfo() {
     return (
         (post && (
             <>
-                <PostHeader />
+                <PostHeader title="Post" />
                 <div className={styles.post}>
                 <div className={styles["image-container"]}>
                     <img src={img} />

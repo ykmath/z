@@ -45,14 +45,14 @@ function NewPost({user}) {
          .then(r => r.json())
          .then((dados) => {
             console.log(dados)
-            setImg(dados.value[0].img);
+            setImg(dados.value.img);
          })
          .catch(err => console.log(err))
     }, [user])
 
     return (
         <>
-            <PostHeader />
+            <PostHeader title="Novo Post" />
             <div className={styles["post-container"]}>
                 <div className={styles["post-image"]}>
                     <img src={img} />

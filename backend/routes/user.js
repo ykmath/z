@@ -11,4 +11,8 @@ router.get("/:nome", (req, res) => {
     userService.get(req, res);
 })
 
+router.patch("/:nome", (req, res) => {
+    userService.changePicture(req, res);
+})
+
 module.exports = router;

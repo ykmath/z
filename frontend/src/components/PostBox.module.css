@@ -5,6 +5,8 @@
     border-bottom: 1px solid rgb(231, 231, 231);
     margin: 0 auto;
     padding: 15px 15px 5px 15px;
+    hyphens: auto;
+    text-align: justify;
 }
 
 .container:hover {
