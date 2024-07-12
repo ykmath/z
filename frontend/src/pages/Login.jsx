@@ -1,6 +1,8 @@
 import {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
 
+import styles from './Login.module.css';
+
 function Login({logUser}) {
     const [user, setUser] = useState();
     
@@ -19,10 +21,10 @@ function Login({logUser}) {
 
 
     return (
-        <div>
-            <h2>logue-se</h2>
-            <input type="text" onInput={setUsername} />
-            <button onClick={login}>loga</button>
+        <div className={styles.login}>
+            <h1>Login</h1>
+            <input type="text" placeholder="Nome de Usuário" onInput={setUsername} />
+            <button onClick={login}>Entrar</button>
         </div>
     )
 }

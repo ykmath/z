@@ -1,0 +1,26 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+}
+
+.login h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.login input[type=text] {
+    width: 14rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 25px;
+}
+
+.login button {
+    margin-top: 1rem;
+    font-size: 23px;
+    width: 7rem;
+    height: 2.5rem;
+}

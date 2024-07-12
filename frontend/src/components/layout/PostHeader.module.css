@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 4rem;
+    border-bottom: 2px solid rgb(194, 194, 194);
+    margin-bottom: 10px
+}
+
+.header button {
+    position: absolute;
+    left: 1%;
+    height: 80%;
+    width: 4rem;
+    border: none;
+    border-radius: 15px;
+}
+
+.header button:hover {
+    cursor: pointer;
+    color: rgb(39, 39, 39);
+    background-color: darkgray;
+}
+
+.header button svg {
+    font-size: 35px;
+    scale: -1;
+}

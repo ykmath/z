@@ -5,6 +5,7 @@ import LikeButton from '../components/buttons/LikeButton';
 import CommentButton from '../components/buttons/CommentButton';
 import CommentBox from '../components/CommentBox';
 import CommentForm from '../components/forms/CommentForm';
+import PostHeader from '../components/layout/PostHeader';
 
 import styles from './PostInfo.module.css';
 
@@ -78,6 +79,7 @@ function PostInfo() {
     return (
         (post && (
             <>
+                <PostHeader />
                 <div className={styles.post}>
                 <div className={styles["image-container"]}>
                     <img src={img} />

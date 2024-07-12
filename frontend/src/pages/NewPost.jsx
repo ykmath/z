@@ -1,6 +1,8 @@
 import {useState, useEffect} from 'react';
 import {useNavigate} from 'react-router-dom';
 
+import PostHeader from '../components/layout/PostHeader';
+
 import styles from './NewPost.module.css';
 
 function NewPost({user}) {
@@ -50,6 +52,7 @@ function NewPost({user}) {
 
     return (
         <>
+            <PostHeader />
             <div className={styles["post-container"]}>
                 <div className={styles["post-image"]}>
                     <img src={img} />
